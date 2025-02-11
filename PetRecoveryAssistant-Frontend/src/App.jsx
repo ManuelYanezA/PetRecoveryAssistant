@@ -2,7 +2,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import Seguimiento_ele from "./pages/treatment";
 import Calendario_ele from "./pages/calendar";
-import MedCalc_ele from "./pages/medCalc";
+//import MedCalc_ele from "./pages/medCalc";
 
 /*Note to self (ESP): Esta página funciona como el header de toda la app, es decir, al seleccionar alguna
 opción, el menú no se moverá de lugar, por el momento, me limitaré a dejar todo arriba de forma que no
@@ -13,7 +13,7 @@ function App(){
   return(
     <div style={containerStyle}>
       {/* Page Title */}
-      <h2 style={{ marginBottom: "5px" }}>PetRecoveryAssistant</h2>
+      <h2 style={titleStyle}>PetRecoveryAssistant</h2>
 
       {/* Navigation Menu */}
       <nav>
@@ -24,9 +24,9 @@ function App(){
           <Link to="/calendar">
             <button style={buttonStyle}>Calendario de Controles</button>
           </Link>
-          <Link to="/medCalc">
+          {/*<Link to="/medCalc">
             <button style={buttonStyle}>Calculadora de Medicinas</button>
-          </Link>
+          </Link>*/}
         </ul>
       </nav>
 
@@ -34,7 +34,7 @@ function App(){
       <Routes>
         <Route path="/treatment" element={<Seguimiento_ele/>}/>
         <Route path="/calendar" element={<Calendario_ele/>}/>
-        <Route path="/medCalc" element={<MedCalc_ele/>}/>
+        {/*<Route path="/medCalc" element={<MedCalc_ele/>}/>*/}
         <Route path="/" element={null}/>
       </Routes>
 
@@ -51,6 +51,12 @@ const containerStyle = {
   padding: "20px",
   boxSizing: "border-box",
 };
+
+const titleStyle = {
+  textAlign: "center",
+  width: "100%",
+  marginBottom: "20px",
+}
 
 const navStyle = {
   display: "flex",
