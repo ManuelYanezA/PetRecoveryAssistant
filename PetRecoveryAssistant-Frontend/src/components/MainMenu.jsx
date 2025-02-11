@@ -8,6 +8,9 @@ function MainMenu() {
                 <Link to="/calendar">
                     <button style={buttonStyle}>Calendario de Tratamiento</button>
                 </Link>
+                <Link to="/treatment">
+                    <button style={buttonStyle}>Alarmas de Tratamiento</button>
+                </Link>
             </div>
         </div>
     );
