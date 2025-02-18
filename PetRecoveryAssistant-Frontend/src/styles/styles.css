@@ -34,3 +34,10 @@
 .button:hover {
     background-color: #0056b3;
 }
+
+.text-wrapper {
+    max-width: 600px;
+    overflow-wrap: break-word;
+    text-align: center;
+    margin: 0 auto;
+}
