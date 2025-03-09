@@ -41,3 +41,12 @@
     text-align: center;
     margin: 0 auto;
 }
+
+.calendar-container {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #120f41;
+    padding: 10px;
+    border-radius: 3px;
+}

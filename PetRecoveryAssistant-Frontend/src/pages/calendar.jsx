@@ -12,10 +12,13 @@ const Calendar_page = () => {
     return(
         <div className="container">
             <h1 className="title">Calendario de Controles</h1>
-            <Calendar
-                onChange={onChange}
-                value={value}
-            />
+            <div className="calendar-container">
+                <Calendar
+                    onChange={onChange}
+                    value={value}
+                />
+            </div>
+            
             <Link to="/">
                 <button className="button">
                     Volver al menú principal
