@@ -12,9 +12,6 @@ function MainMenu() {
                 <Link to="/treatment">
                     <button className="button">Seguimiento de Tratamiento</button>
                 </Link>
-                <Link to="/treatment">
-                    <button style={buttonStyle}>Alarmas de Tratamiento</button>
-                </Link>
             </div>
         </div>
     );
