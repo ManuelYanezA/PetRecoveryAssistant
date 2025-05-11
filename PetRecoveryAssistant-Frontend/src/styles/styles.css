@@ -41,12 +41,59 @@
     text-align: center;
     margin: 0 auto;
 }
-
+/*      BASIC CALENDAR STYLING    */
+/*Basic Styling thanks to the following link: */
+/*https://dev.to/fitzgeraldkd/react-calendar-with-custom-styles-30c9*/
 .calendar-container {
     max-width: 600px;
     margin: auto;
     margin-top: 20px;
-    background-color: #120f41;
+    background-color: #242424;
     padding: 10px;
     border-radius: 3px;
+}
+/*      CALENDAR NAVIGATION STYLING     */
+.react-calendar__navigation {
+    display: flex;
+
+    /*      CALENDAR NAVIGATION TEXT STYLE      */
+    .react-calendar__navigation__label {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .react-calendar__navigation__arrow {
+        flex-grow: 0.333;
+    }
+}
+/*      NEIGHBORING MONTH DAYS STYLING      */
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: #757575 !important;
+    background-color: #303030 !important;
+}
+/*      WEEKEND DAYS NUMBER COLORING        */
+.react-calendar__month-view__days__day--weekend {
+    color: #ff6666;
+}
+/*      CALENDAR CONTAINER MONTH VIEW WIDTH        */
+.react-calendar__month-view__days {
+    display: grid !important;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+}
+/*      MONTH VIEW WEEKDAY TEXT FORMATTING      */
+.react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+/*      CALENDAR TILE FORMAT     */
+.react-calendar__tile {
+    max-width: initial !important;
+    background-color: black;
+    border-color: #aaaaaa;
+    border-radius: 0%;
+    &:hover {
+        background-color: #505050 !important;
+    }
 }
